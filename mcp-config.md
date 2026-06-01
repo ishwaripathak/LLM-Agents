@@ -10,32 +10,32 @@ This file documents the MCP (Model Context Protocol) connectors used with Claude
 
 ### Download & Installation
 - **GitHub Repo:** https://github.com/hereisSwapnil/blinkit-mcp
-- - **NPM Package:** https://www.npmjs.com/package/blinkit-mcp
-  - - **Install command:** `npx -y blinkit-mcp`
-   
+- https://playwright.dev/docs/getting-started-mcp --> install playwright
+- https://nodejs.org/en - install node.js
+- https://github.com/hereisSwapnil/blinkit-mcp - download blinkit mcp
+- add above configuration to your claude_desktop_config.json [C:\Users\user_name\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude_desktop_config.json] Please Note: update the blinkit-mcp repository path accordingly.
+- Before saving close the claude desktop app, then save the json file, launch the clause desktop app.
+
     - ### Configuration (`claude_desktop_config.json`)
-    - ``json
+    - `` json
       {
         "mcpServers": {
-    "playwright": {
-      "command": "npx",
-      "args": ["@playwright/mcp@latest"]
-    },
-    "blinkit-mcp": {
-      "command": "uv",
-      "args": [
-        "run",
-        "--with", "mcp[cli],playwright",
-        "python",
-        "C:\\path\\to\\Downloads\\blinkit-mcp-main\\blinkit-mcp-main\\main.py"
-      ],
-      "cwd": "C:\\path\\to\\Downloads\\blinkit-mcp-main\\blinkit-mcp-main",
-      "env": {
-        "HEADLESS": "false"
-      }
+          "playwright": {
+            "command": "npx",
+            "args": ["@playwright/mcp@latest"]
+          },
+          "blinkit-mcp": {
+            "command": "uv",
+            "args": [
+              "run",
+              "--with", "mcp[cli],playwright",
+              "python",
+              "C:\\path\\to\\Downloads\\blinkit-mcp-main\\blinkit-mcp-main\\main.py"
+            ],
+          "cwd": "C:\\path\\to\\Downloads\\blinkit-mcp-main\\blinkit-mcp-main",
+          "env": {
+            "HEADLESS": "false"
+          }
+        }
     }
-  }
- }``
-
-      ### Reference Links
-      - NPM Package: https://www.npmjs.com/package/blinkit-mcp
+   } ``  
