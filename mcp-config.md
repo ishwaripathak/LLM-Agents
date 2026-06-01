@@ -8,6 +8,11 @@ This file documents the MCP (Model Context Protocol) connectors used with Claude
 
 **Purpose:** Grocery shopping and ordering via Blinkit
 
+### Download & Installation
+- **GitHub Repo:** https://github.com/anshuopinion/blinkit-mcp
+- **NPM Package:** https://www.npmjs.com/package/blinkit-mcp
+- **Install command:** `npx -y blinkit-mcp`
+
 ### Configuration (`claude_desktop_config.json`)
 ```json
 {
@@ -36,6 +41,12 @@ This file documents the MCP (Model Context Protocol) connectors used with Claude
 ## 2. Playwright MCP
 
 **Purpose:** Browser automation tasks (navigating websites, filling forms, clicking elements)
+
+### Download & Installation
+- **GitHub Repo:** https://github.com/microsoft/playwright-mcp
+- **NPM Package:** https://www.npmjs.com/package/@playwright/mcp
+- **Install command:** `npx -y @playwright/mcp`
+- **Install browsers:** `npx playwright install`
 
 ### Configuration (`claude_desktop_config.json`)
 ```json
