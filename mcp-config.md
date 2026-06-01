@@ -14,7 +14,7 @@ This file documents the MCP (Model Context Protocol) connectors used with Claude
   - - **Install command:** `npx -y blinkit-mcp`
    
     - ### Configuration (`claude_desktop_config.json`)
-    - ```json
+    - ``json
       {
         "mcpServers": {
     "playwright": {
@@ -35,9 +35,7 @@ This file documents the MCP (Model Context Protocol) connectors used with Claude
       }
     }
   }
-
-      }
-      ```
+ }``
 
       ### Reference Links
       - NPM Package: https://www.npmjs.com/package/blinkit-mcp
