@@ -17,11 +17,25 @@ This file documents the MCP (Model Context Protocol) connectors used with Claude
     - ```json
       {
         "mcpServers": {
-          "blinkit-mcp": {
-            "command": "npx",
-            "args": ["-y", "blinkit-mcp"]
-          }
-        }
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"]
+    },
+    "blinkit-mcp": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--with", "mcp[cli],playwright",
+        "python",
+        "C:\\path\\to\\Downloads\\blinkit-mcp-main\\blinkit-mcp-main\\main.py"
+      ],
+      "cwd": "C:\\path\\to\\Downloads\\blinkit-mcp-main\\blinkit-mcp-main",
+      "env": {
+        "HEADLESS": "false"
+      }
+    }
+  }
+
       }
       ```
 
